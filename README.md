@@ -22,7 +22,7 @@ Create views or reports to analyze customer orders or popular books. <br>
  ERD Entitty Relationship Diagram  <br>
 <img src="e-commerce1.jpg"> <br>
 
-Collaborators <br>
+## Collaborators <br>
 Mwangi Wambugu <br>
 Zumrati Yusuf <br>
 Raphael Ochieng' <br>
