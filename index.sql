@@ -63,3 +63,16 @@ CREATE TABLE product_item (
     stock_quantity INT NOT NULL DEFAULT 0,
     FOREIGN KEY (product_variation_id) REFERENCES product_variation(product_variation_id
 );
+
+
+CREATE TABLE attribute_category (
+    attribute_category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(50) NOT NULL 
+);
+
+CREATE TABLE attribute_type (
+    attribute_type_id INT PRIMARY KEY AUTO_INCREMENT,
+    type_name VARCHAR(50) NOT NULL,  
+    attribute_category_id INT NOT NULL,
+    FOREIGN KEY (attribute_category_id) REFERENCES attribute_category(attribute_category_id)
+);
