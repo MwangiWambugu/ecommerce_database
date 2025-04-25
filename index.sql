@@ -30,3 +30,16 @@ CREATE TABLE size_category (
     size_category_id INT PRIMARY KEY AUTO_INCREMENT,
     category_name VARCHAR(50) NOT NULL  
 );
+
+CREATE TABLE size_option (
+    size_id INT PRIMARY KEY AUTO_INCREMENT,
+    size_name VARCHAR(20) NOT NULL,  
+    size_category_id INT NOT NULL,
+    FOREIGN KEY (size_category_id) REFERENCES size_category(size_category_id)
+);
+
+CREATE TABLE color (
+    color_id INT PRIMARY KEY AUTO_INCREMENT,
+    color_name VARCHAR(50) NOT NULL 
+   
+);
