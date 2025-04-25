@@ -43,3 +43,23 @@ CREATE TABLE color (
     color_name VARCHAR(50) NOT NULL 
    
 );
+
+
+CREATE TABLE product_variation (
+    product_variation_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_id INT NOT NULL,
+    size_id INT,
+    color_id INT,
+    variation VARCHAR(50),
+    FOREIGN KEY (product_id) REFERENCES product(product_id),
+    FOREIGN KEY (size_id) REFERENCES size_option(size_id),
+    FOREIGN KEY (color_id) REFERENCES color(color_id)
+);
+
+
+CREATE TABLE product_item (
+    item_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_variation_id INT NOT NULL,
+    stock_quantity INT NOT NULL DEFAULT 0,
+    FOREIGN KEY (product_variation_id) REFERENCES product_variation(product_variation_id
+);
