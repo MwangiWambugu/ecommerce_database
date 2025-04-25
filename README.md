@@ -20,7 +20,7 @@ Insert sample data using INSERT INTO statements. <br>
 Create views or reports to analyze customer orders or popular books. <br>
  
  ERD Entitty Relationship Diagram  <br>
-<img src="ecommerce_database/e-commerce1.jpg"> <br>
+<img src="ecommerce_database\e-commerce1.jpg"> <br>
 
  Collaborators <br>
 Mwangi Wambugu <br>
