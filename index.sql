@@ -18,3 +18,15 @@ CREATE TABLE product (
     FOREIGN KEY (brand_id) REFERENCES brand(brand_id)
     
 );
+
+CREATE TABLE product_category (
+    product_category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(100) NOT NULL,
+    product_id INT NULL,
+    FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+CREATE TABLE size_category (
+    size_category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(50) NOT NULL  
+);
