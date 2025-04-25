@@ -27,4 +27,6 @@ Mwangi Wambugu <br>
 Zumrati Yusuf <br>
 Raphael Ochieng' <br>
 Mercy Njoroge  <br>
-Velile  <br>
+Velile  Mifi <br>
+Neo Mokoele <br>
+Aileen Nyathi <br>
