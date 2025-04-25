@@ -49,6 +49,7 @@ CREATE TABLE color (
    
 );
 
+
 CREATE TABLE product_variation (
     product_variation_id INT PRIMARY KEY AUTO_INCREMENT,
     product_id INT NOT NULL,
@@ -65,7 +66,11 @@ CREATE TABLE product_item (
     item_id INT PRIMARY KEY AUTO_INCREMENT,
     product_variation_id INT NOT NULL,
     stock_quantity INT NOT NULL DEFAULT 0,
+
     FOREIGN KEY (product_variation_id) REFERENCES product_variation(product_variation_id)
+
+    FOREIGN KEY (product_variation_id) REFERENCES product_variation(product_variation_id
+
 );
 
 
@@ -80,6 +85,7 @@ CREATE TABLE attribute_type (
     attribute_category_id INT NOT NULL,
     FOREIGN KEY (attribute_category_id) REFERENCES attribute_category(attribute_category_id)
 );
+
 
 CREATE TABLE product_attribute (
     prodduct_attribute_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -98,3 +104,4 @@ CREATE TABLE product_image (
     image_url VARCHAR(255) NOT NULL,
     FOREIGN KEY (product_id) REFERENCES product(product_id)
 );
+
